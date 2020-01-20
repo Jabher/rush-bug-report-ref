@@ -7,16 +7,12 @@
   "nodeSupportedVersionRange": ">=12.0.0",
   "projects": [
     {
-      "packageName": "a",
-      "projectFolder": ""
-    },
-    {
       "packageName": "b",
       "projectFolder": "b"
     },
     {
       "packageName": "c",
-      "projectFolder": "b/c"
+      "projectFolder": "c"
     }
   ]
 }

@@ -1,21 +1,16 @@
 dependencies:
-  '@rush-temp/a': 'file:projects/a.tgz'
   '@rush-temp/b': 'file:projects/b.tgz'
   '@rush-temp/c': 'file:projects/c.tgz'
+  left-pad: registry.npmjs.org/left-pad/1.3.0
 lockfileVersion: 5.1
 packages:
-  'file:projects/a.tgz':
-    dev: false
-    name: '@rush-temp/a'
-    resolution:
-      integrity: sha512-zVtyBCtwRtuorqJoK1zfZV/90XNbnUwF6z//qCLfPK0XZyXobWVbN14bpncXOA0fkiQKEZOpHVEMJCm924CujQ==
-      tarball: 'file:projects/a.tgz'
-    version: 0.0.0
   'file:projects/b.tgz':
+    dependencies:
+      left-pad: registry.npmjs.org/left-pad/1.3.0
     dev: false
     name: '@rush-temp/b'
     resolution:
-      integrity: sha512-+ubAgcfe5Jh1Mx/MPKv90I64tMAKaRTac/iYtfnaSo2F3AOKDWWhqrROEFluvnluBuvsNHy9jPiYMVizn3tyGg==
+      integrity: sha512-KD/23u5vhhwkGmpKvfQX4x/l8M+62rwF/hNe+ZKbS3INTpiEqGnu2cHktUc7erX8ZRVuNnUlP+HG1DCkZuXzvA==
       tarball: 'file:projects/b.tgz'
     version: 0.0.0
   'file:projects/c.tgz':
@@ -25,8 +20,17 @@ packages:
       integrity: sha512-h4q5gFbsZ2e2sWvhgzPmNvFNc7jzODgtlKMq6HIW+kZSC9+MSgXdecbqroQqqj/7SUXqJM6dwUgs1YkK7aTd7w==
       tarball: 'file:projects/c.tgz'
     version: 0.0.0
+  registry.npmjs.org/left-pad/1.3.0:
+    deprecated: use String.prototype.padStart()
+    dev: false
+    name: left-pad
+    resolution:
+      integrity: sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
+      registry: 'https://registry.yarnpkg.com/'
+      tarball: 'https://registry.npmjs.org/left-pad/-/left-pad-1.3.0.tgz'
+    version: 1.3.0
 registry: ''
 specifiers:
-  '@rush-temp/a': 'file:./projects/a.tgz'
   '@rush-temp/b': 'file:./projects/b.tgz'
   '@rush-temp/c': 'file:./projects/c.tgz'
+  left-pad: ~1.3.0
